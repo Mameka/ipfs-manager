@@ -47,7 +47,7 @@ def data_upload():
     #upload
     #Write timestamp into ipfs-hashes.csv
     with open("ipfs-hashes.csv", "a") as fin:
-        fin.write(" " + localtime)
+        fin.write(localtime + " ")
     #Write file/foldername into ipfs-hashes.csv
     command = "ipfs add -r " + data + " >> ipfs-hashes.csv"
     os.system(command)
