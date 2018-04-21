@@ -1,9 +1,22 @@
 #!/usr/bin/env python3
 # Manager for IPFS (Interplanetary Fils System)
 #---------------------------------------------------------------------------
-# Autor: Marco Menne
-# E-Mail: marco.menne17@gmail.com
+# Autor: Noxan
+# E-Mail: noxan@i2pmail.org
 #---------------------------------------------------------------------------
+#Copyright 2018 noxan - noxan@i2pmail.org
+#
+#Licensed under the Apache License, Version 2.0 (the "License");
+#you may not use this file except in compliance with the License.
+#You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#Unless required by applicable law or agreed to in writing, software
+#distributed under the License is distributed on an "AS IS" BASIS,
+#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#See the License for the specific language governing permissions and
+#limitations under the License.
 
 import os
 import time
@@ -43,6 +56,9 @@ def data_upload():
     banner()
     print(" ")
     print("File/Folder upload")
+    print("If there is a space in file/folder name, please use the escape character within the path.")
+    print("Example: File name> my document.txt")
+    print("Usage:> my\ document.txt")
     data = input("Please input the absolut path of the file or folder: \n")
     #upload
     #Write timestamp into ipfs-hashes.csv
